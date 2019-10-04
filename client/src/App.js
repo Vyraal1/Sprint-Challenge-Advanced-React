@@ -3,7 +3,7 @@ import PlayerList from "./components/PlayerList";
 import "./App.css";
 import { useDarkMode } from "./hooks/useDarkMode";
 
-function App() {
+const App = () => {
   const [isDarkMode, setDarkMode] = useDarkMode(false);
 
   return (
@@ -12,6 +12,6 @@ function App() {
       <PlayerList />
     </div>
   );
-}
+};
 
 export default App;
